@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/variaveis.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lorem ipsum</title>
+</head>
+<body>
+    <header>
+        <div class="text">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p><span id="typed"></span></p>
+            <div id="typed-strings">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</p>
+            </div>
+            <button>Botão</button>
+        </div>
+        <div class="image">
+            <img src="./images/image.svg" alt="texto alternativo">
+        </div>        
+    </header>
+    <main>
+        <section class="container-post">
+            <header style="background: #FF6363;" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+        <section class="container-post">
+            <header style="background: #63ECFF" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+        <section class="container-post">
+            <header style="background: #F363FF" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+        <section class="container-post">
+            <header style="background: #63FF73" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+        <section class="container-post">
+            <header style="background: #FFDD63" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+        <section class="container-post">
+            <header style="background: #6663FF" class="header"></header>
+            <article>
+                <h2 class="title">Título do card</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae numquam sit eveniet eligendi, repudiandae dolorem quaerat ratione porro consequatur eum laborum aperiam maiores id cumque quibusdam omnis deleniti in.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h1>Entre em contato</h1>
+        <form action="#">
+            <input type="text" name="name" id="name" placeholder="Nome">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <input type="tel" name="phone" id="phone" placeholder="Telefone">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 30
+        });
+    </script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+        
+        ScrollReveal().reveal('.container-post', { delay: 100 });
+        ScrollReveal().reveal('.header', { delay: 150 });
+        ScrollReveal().reveal('.title', { delay: 200 });
+        ScrollReveal().reveal('.description', { delay: 250 });
+    </script>
+</body>
+</html>

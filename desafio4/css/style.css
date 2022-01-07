@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("../fonts/Merriweather-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 1.625rem;
+}
+
+a{
+    color: var(--blue);
+}
+
+main{
+    margin-top: 50px;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    font-family: 'Lato', sans-serif;
+} 
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section header{
+    font-family: 'Merriweather', serif;
+}
+
+main section#imageContainer{
+    grid-row: 1 / -1;
+    background-color: var(--white300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#formContainer{
+    margin: auto;
+    width: 350px;
+}
+
+main section#formContainer article > input{
+    width: 350px;
+    height: 50px;
+    border: 1px solid var(--input);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+} 
+
+main section#formContainer article > label{
+    margin: .75rem 0;
+}
+
+main section#formContainer article .options{
+    width: 350px;
+    margin: 1.625rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section#formContainer article .options input,
+main section#formContainer article .options label{
+    cursor: pointer;
+}
+
+main section#formContainer article button{
+    width: 350px;
+    margin-bottom: 1rem;
+    padding: 16px 0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+main section#formContainer article button img{
+    width: 20px;
+    margin-right: .75rem;
+}
+
+main section#formContainer article .login{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+main section#formContainer article .googleLogin{
+    background-color: var(--dark);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main section article{
+    margin: 28px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main section img{
+    width: 400px;
+}
+
+footer{
+    margin-bottom: 50px;
+    grid-column: -2 / -1;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    main{
+        grid-template-columns: 1fr;
+    } 
+
+    main section#imageContainer{
+        display: none;
+    }
+}

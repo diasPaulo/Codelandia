@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Black.ttf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root{
+    --white: #F9F9F9;
+    --green: #628E75;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 4.25rem;
+    font-weight: 900;
+    margin: 6px 0;
+    line-height: 4.6325rem;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+p{
+    line-height: 1.8rem;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
+}
+
+.bodyContainer{
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+    color: var(--white);
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 42px;
+}
+
+header a img{
+    width: 100px;
+}
+
+header nav a{
+    margin: 0 1rem;
+}
+
+header nav a img{
+    width: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .image{
+    text-align: center;
+}
+
+main p{
+    margin: 20px 0;
+}
+
+main img{
+    width: 500px;
+}
+
+main .buttons a{
+    text-decoration: none;
+    color: transparent;
+}
+
+main .buttons button{
+    position: relative;
+    height: 45px;
+    width: 225px;
+    margin: 26px 0;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--green);
+    transform: skew(-25deg);
+    cursor: pointer;
+}
+
+main .buttons #watch{
+    background-color: var(--green);
+}
+
+main .buttons button .textButton{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: skew(25deg);
+
+    height: 45px;
+    width: 225px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+}
+
+main .buttons button .textButton img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1023px){
+    body{
+        background: linear-gradient(154.76deg, #628E75 3%, #1A4855 84.12%);;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        line-height: 3.815rem;
+    }
+
+    h2{
+        font-size: 1.125rem;
+    }
+
+    p{
+        font-size: 0.875rem;
+        line-height: 1.575rem;
+    }
+
+    .bodyContainer{
+        max-width: 100%;
+        margin: 0 25px;
+    }
+
+    header{
+        margin-bottom: 28px;
+    }
+
+    header nav a{
+        margin: 0 0.8125rem;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .image{
+        grid-row: 1 / 2;
+    }
+
+    main .image img{
+        width: 300px;
+    }
+
+    main .text{
+        grid-row: 2 / 3;
+    }
+
+    main .buttons button{
+        display: none;
+        margin: 38px 0;
+    }
+
+    main .buttons #watch{
+        display: initial;
+    }
+}

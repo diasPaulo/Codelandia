@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Login</title>
+    <link rel="stylesheet" href="./css/variaveis.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section id="imageContainer">
+            <img src="./images/image.svg" alt="Texto alternativo">
+        </section>
+        <section id="formContainer">
+            <header>
+                <p>Bem vindo de volta</p>
+                <h1>Faça login na sua conta</h1>
+            </header>
+            <article>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="codelandia@gmail.com">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="*********">
+
+                <div class="options">
+                    <span class="rememberMe">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">
+                            Lembre de mim
+                        </label>
+                    </span>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button class="login">Entrar</button>
+                <button class="googleLogin"><img src="./images/google.svg" alt="Logo google"> Ou faça login com o Google</button>
+            </article>
+        </section>
+        <footer>
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </footer>
+    </main>
+</body>
+</html>

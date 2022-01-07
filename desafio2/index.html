@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JordanShoes</title>
+    <link rel="stylesheet" href="./style/variaveis.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <p>Ganhe R$ 10,00 de desconto no frete</p>
+            </div>
+            <div class="middle">
+                <h1>JordanShoes</h1>
+            </div>
+            <div class="bottom">
+                <div class="image"></div>
+                <div class="content">
+                    <h2>A melhor loja de Jordan</h2>
+                    <span id="typed"></span>
+                    <div id="typed-strings">
+                        <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <header>
+                <h1>Destaques</h1>
+                <p>Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+            </header>
+            <section class="container-post">
+                <img src="./images/1.png" alt="Tênis 1">
+                <h2>Tênis 1</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/2.png" alt="Tênis 2">
+                <h2>Tênis 2</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/3.png" alt="Tênis 3">
+                <h2>Tênis 3</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/4.png" alt="Tênis 4">
+                <h2>Tênis 4</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/5.png" alt="Tênis 5">
+                <h2>Tênis 5</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/6.png" alt="Tênis 6">
+                <h2>Tênis 6</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/7.png" alt="Tênis 7">
+                <h2>Tênis 7</h2>
+            </section>
+            <section class="container-post">
+                <img src="./images/8.png" alt="Tênis 8">
+                <h2>Tênis 8</h2>
+            </section>
+        </main>
+        <footer>
+            <p>Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 30
+        });
+    </script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.container-post', { delay: 200 });
+    </script>
+</body>
+</html>
