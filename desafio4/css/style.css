@@ -28,7 +28,6 @@ a{
 }
 
 main{
-    margin-top: 50px;
     min-height: 100vh;
     width: 100%;
     display: grid;
@@ -133,6 +132,7 @@ footer{
 
 @media (max-width: 768px){
     main{
+        padding-top: 50px;
         grid-template-columns: 1fr;
     } 
 
